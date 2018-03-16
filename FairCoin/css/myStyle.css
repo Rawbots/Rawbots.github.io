@@ -1,0 +1,149 @@
+/*========PARTE DE LA PALETA DE COLOR======*/
+.accordion {
+    background-color:#57211F; 
+    color: #fff;
+    cursor: pointer;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+
+}
+
+/*==PALETA DE COLOR======*/
+.active, .accordion:hover {
+    background-color: #5D3740; 
+}
+
+.panel {
+ 
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+/*=================================================================================*/
+
+.aliniartexto{
+    text-align: center;
+}
+
+@media (max-width: 732px){
+    
+  .aliniartexto{
+    text-align: center;
+
+}
+}
+
+@media (max-width: 576px){
+.aliniartexto{
+  text-align: center;
+}
+}
+
+/*=================================================================================*/
+.redondiado{
+    border-radius:2px;
+
+}
+
+/*=================================================================================*/
+.textjustificado{
+    text-align: justify;
+}
+/*===========================PALETA DE COLOR======================================================*/
+
+/*===BACKGROUND===*/
+.fondo{
+    background: #175666;
+}
+
+/*===TEXTO===*/
+.textcolor{
+     color:#fff;
+}
+
+/*==FONDO DE TABLAS=*/
+.fondoBlanco{
+    background: #fff;
+}
+
+/*==FONDO DE TABLAS 2=*/
+.fondoBlanco2{
+    background: #8FB8CD;
+}
+/*==FONDO DE contenedor TABLAS=*/
+.fondoConTabla{
+    background: #8FB8CD;
+}
+
+/*==FONDO DE texto TABLAS=*/
+.fondoConTablaText{
+    color: #96634C;
+}
+
+/*==CABEZA DE TABLAS=*/
+.tablaBorde{
+    background: #57211F;
+}
+
+
+/*======================PALETA DE COLOR FIN===========================================================*/
+
+.imagen-responsive{
+    
+}
+
+@media (max-width: 732px){
+    
+.imagen-responsive{
+    max-width: 90%;
+}
+}
+
+@media (max-width: 576px){
+.imagen-responsive{
+    max-width: 90%;
+}
+}
+/*=================================================================================*/
+.iconos-imagenes{
+    width: 60px;
+    height: 60px;
+    border: 2px solid grey;
+    border-radius: 100px;
+    align-content: center;
+
+}
+
+/*=================================================================================*/
+.iconos-imagenes2{
+    width: 60px;
+    height: 60px;
+    align-content: center;
+    
+}
+
+/*=================================================================================*/
+.pantallafull{
+    height: 100vh;
+}
+
+@media (max-width: 732px){
+    
+.pantallafull{
+   
+}
+}
+
+@media (max-width: 576px){
+.pantallafull{
+
+}
+}
