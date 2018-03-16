@@ -147,3 +147,22 @@
 
 }
 }
+
+/*=================================================================================*/
+.youtubeTexto{
+    text-align: left;
+}
+
+@media (max-width: 732px){
+    
+.youtubeTexto{
+    text-align: center;
+}
+}
+
+@media (max-width: 576px){
+.youtubeTexto{
+    text-align: center;
+}
+}
+
