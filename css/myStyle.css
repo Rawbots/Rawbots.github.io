@@ -53,6 +53,11 @@
 
 }
 
+.redondiado2{
+    border-radius:4px;
+
+}
+
 /*=================================================================================*/
 .textjustificado{
     text-align: justify;
