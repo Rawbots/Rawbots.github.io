@@ -27,6 +27,30 @@
     transition: max-height 0.2s ease-out;
 }
 
+@media (max-width: 732px){
+    
+.panel {
+ 
+    padding: 0 6px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+}
+
+@media (max-width: 576px){
+.panel {
+ 
+    padding: 0 6px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+}
+
+
 /*=================================================================================*/
 
 .aliniartexto{
@@ -61,6 +85,23 @@
 /*=================================================================================*/
 .textjustificado{
     text-align: justify;
+}
+
+.textjustificado2{
+    text-align: justify;
+}
+
+@media (max-width: 732px){
+    
+ .textjustificado2{
+    text-align: left;
+}
+}
+
+@media (max-width: 576px){
+.textjustificado2{
+    text-align: left;
+}
 }
 /*===========================PALETA DE COLOR======================================================*/
 
