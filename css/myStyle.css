@@ -1,7 +1,7 @@
 /*========PARTE DE LA PALETA DE COLOR======*/
 .accordion {
-    background-color:#57211F; 
-    color: #fff;
+    background-color:#00c6c1; /*modificado*/
+    color: #1e1e2b;
     cursor: pointer;
     padding: 12px;
     width: 100%;
@@ -15,7 +15,7 @@
 
 /*==PALETA DE COLOR======*/
 .active, .accordion:hover {
-    background-color: #5D3740; 
+    background-color: #82f8f4; /*#5D3740 modificado*/ 
 }
 
 .panel {
@@ -107,7 +107,7 @@
 
 /*===BACKGROUND===*/
 .fondo{
-    background: #175666;
+    background: #1e1e2b; /*modificado*/
 }
 
 /*===TEXTO===*/
@@ -117,12 +117,12 @@
 
 /*==FONDO DE TABLAS=*/
 .fondoBlanco{
-    background: #fff;
+    background: #1e1e2b; /*modificado*/
 }
 
 /*==FONDO DE TABLAS 2=*/
 .fondoBlanco2{
-    background: #8FB8CD;
+    background: #898989; /*modificado*/
 }
 /*==FONDO DE contenedor TABLAS=*/
 .fondoConTabla{
@@ -131,12 +131,12 @@
 
 /*==FONDO DE texto TABLAS=*/
 .fondoConTablaText{
-    color: #96634C;
+    color: #1e1e2b;/*96634C modificado*/
 }
 
 /*==CABEZA DE TABLAS=*/
 .tablaBorde{
-    background: #57211F;
+    background: #00c6c1; /*modificado*/
 }
 
 
