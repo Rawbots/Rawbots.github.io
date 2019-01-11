@@ -147,17 +147,8 @@
 
 					<div class="container center">
 						<div class="vertical-middle ignore-header">
-							<div class="emphasis-title">
-								<h1>
-									<span class="text-rotater nocolor" data-separator="|" data-rotate="fadeIn" data-speed="6000">
-										<span class="t-rotate t700 font-body opm-large-word"></span>
-									</span>
-								</h1>
-							</div>
-							<a href="https://rawbots.github.io/FairCoin/" class="button button-border button-light button-rounded" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Download RawBots</a>
 						</div>
 					</div>
-
 					<div class="video-wrap">
 						<video poster="images/videos/highres_img.jpg" preload="auto" loop autoplay muted>
 							
@@ -1978,7 +1969,6 @@
                   <br/><hr><br/>
                   <b>Usage</b>
                   <br/> Example of a valid sample:<br/><br/>
-                  <a href="https://http://cd.textfiles.com/10000soundssongs/WAV/ALARM.WAV" target="_blank"/>
                     <button type="button" class="btn fondo textcolor">ALARM.WAV</button>
                   </a>
                   <br/><br/>
@@ -4359,19 +4349,41 @@
  <!--===============ACORDION===========================================================================-->
  <script>
         var acc = document.getElementsByClassName("accordion");
-        var i;
+          var i;
 
           for (i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function() {
+            acc[i].onclick = function () {
+
+              if (!this.classList.contains('active')) {
+                closeAll();
+              }
+
               this.classList.toggle("active");
               var panel = this.nextElementSibling;
-              if (panel.style.maxHeight){
+              if (panel.style.maxHeight) {
                 panel.style.maxHeight = null;
               } else {
                 panel.style.maxHeight = panel.scrollHeight + "px";
-              } 
-            });
+              }
+            }
           }
+        /*Added new functionalities for the accordion to close when another one is opened*/
+          function openAll() {
+            for (i = 0; i < acc.length; i++) {
+              acc[i].classList.add("active");
+              acc[i].nextElementSibling.style.maxHeight = acc[i].nextElementSibling.scrollHeight + "px";
+            }
+          }
+
+          function closeAll() {
+            for (i = 0; i < acc.length; i++) {
+              acc[i].classList.remove("active");
+              acc[i].nextElementSibling.style.maxHeight = null;
+            }
+          }
+
+          document.getElementById('openAll').addEventListener('click', openAll);
+          document.getElementById('closeAll').addEventListener('click', closeAll);
      </script>
  <!--===============REACTJS===========================================================================-->
     <div id="root"></div>
